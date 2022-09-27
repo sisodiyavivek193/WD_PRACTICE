@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(212, 189, 235);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.col {
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    width: 50%;
+}
+.logo img {
+    margin-left: 25px;
+    background-color: black;
+}
+
+.list {
+    width: 100%;
+    margin-left: 15px;
+    /* justify-content: center; */
+}
+.list ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.list ul li a {
+    color: black;
+}
+
+.btn {
+    width: 100%;
+    margin-left: 35px;
+    text-align: end;
+}
+
+.btn #sign {
+    color: black;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 100px
+}
+.btn #sign:hover{
+    background-color: crimson;
+}
+
+
+
+.logo:hover {
+    background-color: rgb(185, 221, 165);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: .5rem;
+
+}
+
+
+.list ul li a:hover {
+    background-color: rgb(11, 129, 138);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: .5rem;
+
+}
+
+.btn #join:hover {
+    background-color: rgb(99, 99, 26);
+}
