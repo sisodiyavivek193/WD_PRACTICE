@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Fasthand&family=Ubuntu:wght@300&display=swap');
+@font-face {
+    font-family: reey;
+    src: url(font/Reey-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+#kkk {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url(img/Header\ Background.png);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+nav {
+    height: 70px;
+    /* background: #1b1b1b; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0 100px;
+}
+
+nav .logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.activ {
+    color: #1b1b1b;
+    background: #fff;
+    border-radius: 5px;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        padding: 0px 25px 0 25px;
+    }
+    nav .menu-btn i {
+        display: block;
+    }
+    nav ul {
+        z-index: 1;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    #click:checked~.menu-btn i::before {
+        content: "\f00d";
+    }
+    #click:checked~ul {
+        left: 0%;
+    }
+    nav ul li {
+        margin: 40px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.activ {
+        color: aqua;
+        background: none;
+    }
+}
+
+.col-lg-2 {
+    width: 50%;
+}
+
+.heder-text {
+    margin-left: 3rem;
+    color: #fff;
+}
+
+.heder-text h1 {
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: reey;
+    /* font-family: Brush Script MT, Brush Script Std, cursive; */
+    font-weight: 400;
+    margin-top: 7rem;
+    font-size: 5rem;
+    filter: drop-shadow(0px 5px 2.5px rgba(84, 82, 79, 0.22));
+}
+
+.heder-text h4 {
+    padding: 3rem 0 2rem 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.heder-text button {
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.heder-text p {
+    margin: 1rem 0 9rem 0;
+    line-height: 24px;
+    width: 88%;
+}
+
+.food-img {
+    position: absolute;
+}
+
+.food-img img {
+    width: 100%;
+}
+
+.col {
+    width: 100%;
+}
+
+
+/*-----------------section 1---------------- */
+
+.se1-main-text h4 {
+    font-family: reey;
+    margin-top: 1rem;
+    font-size: 6rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.se1-main-text p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: .7rem 0 4rem 0;
+    /* padding: 10px 0 30px 0; */
+}
+
+.col-lg-6 {
+    width: 33.33%;
+}
+
+.se1-text1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.se1-text1 img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.se1-text1 h2 {
+    padding: 0px 0 0 55px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.se1-text1 p {
+    width: 80%;
+    margin: 3px auto;
+    text-align: left;
+    line-height: 24px;
+    padding: 10px 0 0 55px;
+}
+
+.se1-buten {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.se1-buten button {
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background-color: #111;
+    color: #fff;
+}
+
+
+/*-----------------section 2---------------- */
+
+.se2-bg {
+    background: #111;
+    color: #fff;
+}
+
+.se2-main-text h4 {
+    font-family: reey;
+    margin-top: 1rem;
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 1rem;
+    text-align: center;
+}
+
+.se2-text1 p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+}
+
+.se2-button {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.se2-button button {
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #27292c;
+}
+
+
+/*-----------------section 3---------------- */
+
+.se3-img1 {
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+}
+
+.se3-img1 img {
+    width: 100%;
+}
+
+.se3-text1 h4 {
+    font-size: 40px;
+    color: #27292c;
+    font-weight: 700;
+    width: 98%;
+}
+
+.se3-text1 p {
+    line-height: 24px;
+    padding: 20px 0 20px 0;
+}
+
+.se3-text1 button {
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background-color: #27292c;
+    color: #fff;
+}
+
+.gd {
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* -----------------section 4---------------- */
+
+#se4-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/Header\ Background.png);
+    position: relative;
+    width: 100%;
+    background-position: 0 -10rem;
+    z-index: 1;
+}
+
+.img-pan img {
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    top: -5rem;
+    width: 100%;
+}
+
+.se4-main-text {
+    color: #fff;
+}
+
+.se4-main-text h4 {
+    font-family: reey;
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.se4-main-text p {
+    line-height: 24px;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.pizz {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pizz img {
+    width: 100%;
+    /* margin-left: 8rem; */
+    margin-top: 3rem;
+}
+
+
+/* -----------------section 5---------------- */
+
+.se5-text1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.se5-text1 h4 {
+    font-family: reey;
+    font-size: 3rem;
+    font-weight: 100;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.se5-text2 p {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 12rem;
+}
+
+.se5-text2 h4 {
+    margin: 2rem 0 4rem 0;
+    text-align: center;
+}
+
+
+/* -----------------section 6---------------- */
+
+.se6-img img {
+    top: -3rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.sebg6 {
+    position: relative;
+    background: #27292c;
+    color: #fff;
+    z-index: 999;
+}
+
+.se6-text1 {
+    text-align: center;
+}
+
+.se6-text1 h4 {
+    padding-top: 15rem;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+.se6-text1 p {
+    width: 50%;
+    margin: 0 auto;
+    padding: 3rem 0 3rem 0;
+}
+
+.search input {
+    z-index: 1000;
+    padding: 15px 20rem 15px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search button {
+    cursor: pointer;
+    padding: 15px 50px;
+    border-radius: 20px;
+    margin-left: -2.5rem;
+    border: none;
+    color: #fff;
+    background-color: #111;
+}
+
+.search {
+    padding-bottom: 14rem;
+}
+
+footer {
+    margin: 10rem 0 12rem 0;
+    margin-top: 10rem;
+}
+
+.foot-text1 h2 {
+    padding-bottom: 20px;
+}
+
+.foot-text1 p {
+    width: 70%;
+    padding-bottom: 1.5rem;
+}
+
+.icon ul li {
+    display: inline-block;
+    padding: 15px 17px;
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.icon ul li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.instagram:hover {
+    color: #25D366;
+}
+
+.whatsapp:hover {
+    color: #25D366;
+}
+
+.facebook:hover {
+    color: #4267B2;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.col-3 {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.foot-text2 h3 {
+    padding-bottom: 20px;
+}
+
+.foot-text2 ul li {
+    line-height: 30px;
+}
+
+.foot-text2 ul li a {
+    color: #000;
+}
+
+.foot-text2 ul li a:hover {
+    color: burlywood;
+}
+
+.vkv {
+    visibility: hidden;
+}
+
+@media (max-width:991px) {
+    body {
+        padding: 0;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    #kkk {
+        width: 100%;
+        /* background: none; */
+        position: relative;
+        z-index: 1;
+    }
+    .food-img {
+        width: 65%;
+        top: 7rem;
+        right: 0;
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    .heder-text p {
+        background: rgba(51, 51, 51, 0.451);
+    }
+    .heder-text h1 {
+        width: 100%;
+    }
+    .search {
+        display: none;
+    }
+    .pizz img {
+        text-align: center;
+        margin-left: 2rem;
+    }
+    .img-pan {
+        display: none;
+    }
+    .se6-text1 h4 {
+        margin-top: -14rem;
+    }
+    .se6-img img {
+        margin-top: 2rem;
+    }
+}
