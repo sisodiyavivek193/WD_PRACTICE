@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid black;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .flex-direct {
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+        }
+        .flex-wrap{
+            /* wrap-jetli width hoy eena karta contant ni width vadhi jay to contant niche ave  */
+             flex-wrap:wrap;
+             /* wrap-reverse=jetli width hoy eena karta contant ni width vadhi jay to contant niche ave  */
+             /* flex-wrap: wrap-reverse; */
+        }
+        .box-25{
+            width: 20%;
+            /* margin: auto; */
+        }
+        .justify-content-center{
+            justify-content:center;
+        }
+        .justify-content-flex-start{
+            justify-content: flex-start;
+        }
+        .justify-content-flex-end{
+            justify-content: flex-end;
+        }
+        .justify-content-end{
+            justify-content:end;
+        }
+        .justify-content-start{
+            justify-content: start;
+        }
+        .justify-content-space-around{
+            justify-content: space-around;
+        }
+        .justify-content-space-evenly{
+            justify-content: space-evenly;
+        }
+        .justify-content-space-between
+        
+        {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Display Flex</h2>
+    <p>helps to change child display prop line by line or side by side.</p>
+    <div class="row">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+    <div class="row">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+    </div>
+
+    <h3>Flex-direction</h3>
+    <div class="row flex-direct">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+    </div>
+
+    <h3>flex-wrap</h3>
+    <div class="row flex-wrap">
+        <div class="box-25">box1</div>
+        <div class="box-25">box2</div>
+        <div class="box-25">box3</div>
+        <div class="box-25">box4</div>
+        <div class="box-25">box5</div>
+        <!-- <div class="box-25">box6</div> -->
+    </div>
+
+    <h3>justify-content-center</h3>
+    <div class="row justify-content-center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-flex-start</h3>
+    <div class="row justify-content-start">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-flex-end</h3>
+    <div class="row justify-content-flex-end">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-end</h3>
+    <div class="row justify-content-end">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-space-around</h3>
+    <div class="row justify-content-space-around">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-space-evenly</h3>
+    <div class="row justify-content-space-evenly">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-space-between</h3>
+    <div class="row justify-content-space-between">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-center</h3>
+    <div class="row justify-content-center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-center</h3>
+    <div class="row justify-content-center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+    <h3>justify-content-center</h3>
+    <div class="row justify-content-center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+
+    </div>
+</body>
+
+</html>

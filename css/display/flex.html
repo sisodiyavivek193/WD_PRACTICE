@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .row {
+            display: flex;
+        }
+        
+        .col-2 {
+            /* background-color: yellow; */
+
+            width: 100%;
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+            /* flex-direction:row; */
+            /* flex-direction:row-reverse; */
+        }
+
+        .text-1 {
+            width: 30%;
+        }
+
+        .flex-wrap {
+            
+            flex-wrap:wrap-reverse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>flex direction</h3>
+     <div class="row">
+        <div class=" row col-2">
+            <div class="text">menu1</div>
+            <div class="text">menu2</div>
+            <div class="text">menu3</div>
+            <div class="text">menu4</div>
+        </div>
+    </div>
+
+    <h3>flex wrap</h3>
+    <div class=" row flex-wrap">
+        <div class="text-1">menu1</div>
+        <div class="text-1">menu2</div>
+        <div class="text-1">menu3</div>
+        <div class="text-1">menu4</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
