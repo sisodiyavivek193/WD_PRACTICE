@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center
+        }
+
+        tr:nth-child(even) {
+            /* background-color: aqua; */
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: brown;
+        }
+
+        thead>tr:nth-child(1) {
+            background-color: rgb(104, 104, 68);
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: red;
+        }
+
+        .hover_2:hover {
+            background-color: rgb(16, 133, 133);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Runs</th>
+                <th>Centuries</th>
+                <th>Strike Rate</th>
+                <th>Avg</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Virat</td>
+                <td>9000</td>
+                <td>71</td>
+                <td>154</td>
+                <td>51</td>
+            </tr>
+
+            <tr class="hover_2">
+                <td>2</td>
+                <td>Shikar</td>
+                <td>12000</td>
+                <td>40</td>
+                <td>91</td>
+                <td>49</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Dhoni</td>
+                <td>5000</td>
+                <td>8</td>
+                <td>85</td>
+                <td>45</td>
+            </tr>
+
+            <tr class="hover_2">
+                <td>4</td>
+                <td>Rishabh</td>
+                <td>4000</td>
+                <td>2</td>
+                <td>89</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Rahul</td>
+                <td>6000</td>
+                <td>55</td>
+                <td>63</td>
+                <td>51</td>
+            </tr>
+            <tr class="hover_2">
+                <td>6</td>
+                <td>Parv</td>
+                <td>8000</td>
+                <td>36</td>
+                <td>75</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Dhrupal</td>
+                <td>5600</td>
+                <td>8</td>
+                <td>264</td>
+                <td>14</td>
+            </tr>
+            <tr class="hover_2">
+                <td>8</td>
+                <td>Arpit</td>
+                <td>3400</td>
+                <td>4</td>
+                <td>129</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Chintan</td>
+                <td>3400</td>
+                <td>24</td>
+                <td>144</td>
+                <td>63</td>
+            </tr>
+            <tr class="hover_2">
+                <td>10</td>
+                <td>Meet</td>
+                <td>4560</td>
+                <td>12</td>
+                <td>54</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
