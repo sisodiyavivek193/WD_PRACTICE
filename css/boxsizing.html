@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            /* padding: 0; */
+            /* border-box=content ma change ny aave ane border ni under ti padding aapse */
+            box-sizing: border-box;
+            /* content-box=border ni under content ma change avse */
+            /* box-sizing: content-box; */
+        }
+        .row{
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        div[class*="col"]{
+            height: 200px;
+            width: 200px;
+            border: 3px solid hotpink;
+        }
+        .col-1{background-color: red;padding: 90px;}
+        .col-2{background-color: yellow;padding: 80px;}
+        .col-3{background-color:green;padding: 70px;}
+        .col-4{background-color: blue  ;padding: 200px;}
+    </style>
+</head>
+<body>
+    <div class="row">
+    <div class="col-1"> something</div>
+    <div class="col-2"> something</div>
+    <div class="col-3"> something</div>
+    <div class="col-4"> something</div>
+    </div>
+</body>
+</html>
