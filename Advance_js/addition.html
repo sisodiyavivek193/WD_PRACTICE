@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="aaa" id="hello1" class="bbb">
+    <input type="text" name="aaa" id="hello2" class="bbb">
+    <button value="vivek" onclick="btnclick()">click</button>
+    <br><br>
+    <!-- <div id="livedata"></div> -->
+    <input id="sum">
+    <script>
+        function btnclick() {
+
+            // let x, n, c;
+            // x = parseInt(document.getElementById("hello1").value);
+            // n = parseInt(document.getElementById("hello2").value);
+            // c = x + n;
+            // document.getElementById("sum").value = c;
+
+
+            x = document.getElementById('hello1').value;
+            n = document.getElementById('hello2').value;
+
+            let sum = parseInt(x) + parseInt(n)
+            document.getElementById("sum").value = sum;
+
+            // let x = 50;
+            // let n = 100;
+
+            // document.getElementById(livedata).innerHTML = "Test innerHTML"
+            // document.getElementById(livedata).innerHTML = "Test innerHTML"
+            // document.getElementById(livedata).innerHTML = " <b> Test innerHTML </b>"
+            // document.getElementById(livedata).innerHTML = "<b> Test innerHTML </b>"
+            // document.getElementById("livedata").innerHTML = sum
+            // console.log(why);
+            // console.log(why.value);
+            // let inpdata = document.getElementById("livedata")
+
+        }
+
+
+
+
+
+    // first Number<input id="value1">
+    // <br><br>
+    // secound Number<input id="value2">
+    // <br> <br>
+    // <button onclick="add()">click</button>
+    // <input id="sum">
+    // <script>
+    //     function add() {
+    //         var a, b, c;
+    //         a = (document.getElementById("value1").value);
+    //         a = (document.getElementById("value2").value);
+    //         c = a + b;
+    //         document.getElementById("sum").value = c;
+    //     }
+        // function add() {
+        //     var a, b, c;
+        //     a = parseInt(document.getElementById("value1").value);
+        //     b = parseInt(document.getElementById("value2").value);
+        //     c = a + b;
+        //     document.getElementById("sum").value = c;
+        // }
+
+    </script>
+</body>
+
+</html>
