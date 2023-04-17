@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validattion Form</title>
+</head>
+<style>
+    h1 {
+        color: brown;
+        font-size: 55px;
+    }
+
+    label {
+        color: #0000;
+    }
+
+    span {
+        color: red;
+    }
+</style>
+
+<body>
+    <center>
+
+        <h1>validattion form </h1>
+        Username:<input type="text" onblur="validation(this,'NAME','this is username requierd')"> <span
+            id="NAME">*</span>
+        <br><br>
+        Email Id:<input type="email" onblur="validation(this,'EMAIL','this is email requierd')"><span id="EMAIL">*
+        </span>
+        <br><br>
+        Password: <input type="password" onblur="validation(this,'PASSWORD','this is password requierd')"><span
+            id="PASSWORD">*</span>
+        <br><br>
+        Phone num:<input type="Number" onblur="validation(this,'NUMBER','this is Phone Number requierd')"><span
+            id="NUMBER">*</span>
+        <br><br>
+        <button>submit</button>
+        <script>
+            function validation(v, never, hii) {
+                if (v.value == '') {
+                    document.getElementById(never).innerText = hii;
+                } else {
+                    document.getElementById(never).innerText = ''
+                }
+            }
+        </script>
+    </center>
+
+</body>
+
+</html>
