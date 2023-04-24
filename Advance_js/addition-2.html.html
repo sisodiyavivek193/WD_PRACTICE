@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" id="txt1" name="esrdfg">
+    <input type="text" id="txt2" name="fzexgr">
+    <br>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+            var y = document.getElementById("txt1").value;
+            var z = document.getElementById("txt2").value;
+            var x = parseInt(y) + parseInt(z);
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+    
+</body>
+
+</html>

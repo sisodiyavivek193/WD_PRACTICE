@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css">
+    <style>
+        body {
+            background-color: rgb(27, 6, 53);
+            color: #eaeaea;
+            font-family: sans-serif;
+        }
+
+        img {
+            width: 425px;
+            height: 500px;
+        }
+
+        .splide {
+            margin: 80px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="splide">
+        <div class="splide__track" id="splide-track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="../js/confinedriley-mIj8Cn3oNDg-unsplash.jpg" alt="plchldr.co ff4136">
+                </li>
+                <li class="splide__slide">
+                    <img src="../js/jimmy-woo-man-tsing-yR7H6C5J2_I-unsplash.jpg" alt="plchldr.co fff400">
+                </li>
+                <li class="splide__slide">
+                    <img src="../js/latrach-med-jamil-QSq6cn82P6A-unsplash.jpg" alt="plchldr.co Black">
+                </li>
+                <li class="splide__slide">
+                    <img src="../js/mailchimp-6kajEqr84iY-unsplash.jpg" alt="plchldr.co f34123">
+                </li>
+                <li class="splide__slide">
+                    <img src="../js/shiqi-zhao-rUg7VAjeUnQ-unsplash.jpg" alt="plchldr.co 456465">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                type: 'loop',
+                drag: 'free',
+                focus: 'center',
+                perPage: 3,
+                autoScroll: {
+                    speed: 1,
+                },
+            }).mount(window.splide.Extensions);
+        });
+    </script>
+</body>
+
+</html>
