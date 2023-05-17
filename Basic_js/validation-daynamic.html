@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daynamic-form</title>
+</head>
+<style>
+    h1 {
+        color: brown;
+        font-size: 55px;
+    }
+
+    label {
+        color: #0000;
+    }
+
+    span {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <center>
+        <form action="" method="post" id="dayn-form">
+
+            <h1>validation form </h1>
+
+            Username:<input type="text" id="username" name="username" required>
+            <br><br>
+            <div>aenaucaudn </div>
+            Email Id:<input type="text" id="email" name="email" required>
+            <br><br>
+            Password: <input type="text" id="password" name="password" required>
+            <br><br>
+            Phone num:<input type="number" id="number" name="number" required>
+            <br><br>
+            <input type="submit" id="save" onclick="cheakvalidation()" name="save">
+        </form>
+        <script>
+            function cheakvalidation() {
+                // document.getElementById("dayn-form")
+                event.preventDefault();
+                let formrequiredfield = document.getElementById("dayn-form").querySelectorAll("[required]")
+
+                // var inputName = document.getElementById('username');
+                // console.log(h);
+
+                for (let index = 0; index < formrequiredfield.length; index++) {
+
+                    var h = document.createElement("span");
+                    var t = document.createTextNode("this field is reuired");
+                    h.appendChild(t);
+                    // console.log(h);
+                    // console.log(formrequiredfield[index]);
+                    // console.log(formrequiredfield[index].nextElementSibling);
+                    // console.log(formrequiredfield[index].nextElementSibling.nodeName);
+                    if (formrequiredfield[index].value == "") {
+
+                        if (formrequiredfield[index].nextElementSibling.nodeName == "SPAN") {
+                            formrequiredfield[index].nextElementSibling.remove()
+                        }
+                        formrequiredfield[index].after(h);
+                    } else {
+                        if (formrequiredfield[index].nextElementSibling.nodeName == 'SPAN') {
+                            formrequiredfield[index].nextElementSibling.remove()
+
+                        }
+                    }
+                    // return true
+                }
+
+
+
+            }
+
+            // function jj() {
+            //     if (cheakvalidation == true) {
+            //         alert("kkkk")
+
+            //     }
+            // }
+        </script>
+    </center>
+
+</body>
+
+</html>
