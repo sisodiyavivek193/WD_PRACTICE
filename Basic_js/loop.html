@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+
+<body>
+
+    <script>
+
+        // 1
+        // 22
+        // 333
+        // 4444
+        // 55555
+        // 666666
+        // 7777777
+        // 88888888
+        for (let index = 1; index <= 8; index++) {
+
+            // console.log("outer loop index", index);
+            for (let i = 1; i <= index; ++i) {
+                // console.log("inner loop i", i);
+                // document.write(" * ")
+                // document.write(i + "")
+                document.write(index + "")
+            }
+            document.write("<br>")
+        }
+
+
+        document.write("<br><br>")
+        //               *
+        //             * *
+        //           * * *
+        //         * * * *
+        //       * * * * *
+        //     * * * * * *
+        //   * * * * * * *
+        // * * * * * * * *
+        for (i = 1; i <= 8; i++) {
+            for (j = i; j < 8; j++) {
+                document.write("&ensp; ");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write(" * ");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br><br>")
+        //  * * * * * * * *
+        //    * * * * * * * *
+        //     * * * * * * * *
+        //      * * * * * * * *
+        //       * * * * * * * *
+        //        * * * * * * * *
+        //         * * * * * * * *
+        //          * * * * * * * *
+
+        for (let index = 0; index < 8; index++) {
+
+            for (let i = 0; i <= index; i++) {
+                document.write("&nbsp")
+            }
+            for (let j = 0; j < 8; j++) {
+                document.write(" * ")
+            }
+            document.write("<br>")
+        }
+
+        document.write("<br><br>")
+
+
+        // outer loop runs for `rows` no. of times
+        for (let n = 1; n <= rows; n++) {
+            // print stars for n number of times in each row
+            for (let num = 1; num <= n; num++) {
+                pattern += "*";
+            }
+            pattern += "\n";
+            document.write(pattern);
+        }
+
+    </script>
+</body>
+
+</html>
