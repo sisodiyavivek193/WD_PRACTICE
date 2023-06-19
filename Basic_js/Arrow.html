@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [];
+        let b = [];
+        console.log(a)
+        console.log(b)
+        console.log(a == b)
+        console.log(a === b)
+    </script>
+
+
+    <!-- <script>
+        let a = [];
+        let b = a
+        console.log(a)
+        console.log(b)
+        console.log(a == b)
+        console.log(a === b)
+    </script> -->
+
+
+    <!-- <script>
+
+        const data = ["hello", " kuchbhi", "anything"];
+        // console.log(data[1])
+        // const [,a] = data;
+        const [, , a] = data;
+        console.log(a);
+        
+        
+    </script> -->
+    <!-- <script>
+        const data = { name: "virat", no: 11, age: "22" };
+        const store = { city: "aaaa", email: "test" };
+
+        vvv = { ...data, ...store }
+        console.log(vvv)
+    </script> -->
+    <!-- <script>
+        const data = { name: "virat", no: 11, age: "22" };
+        const store = { city: "aaaa", email: "test", age: "55" };
+
+        vvv = { ...data, ...store }
+        console.log(vvv)
+    </script> -->
+    <!-- <script>
+        // const data = { name: "virat", no: 11, age: "22" };
+        // const store = { city: "aaaa", email: "test" };
+
+        // vvv = { ...data, store }
+        // console.log(vvv)
+
+        console.log(typeof NaN)
+    </script> -->
+    <!-- <script>
+        function* Numbers() {
+            let num = 1;
+            while (true) {
+                yield num++;
+            }
+        }
+
+        var gen = Numbers();
+
+        // Loop to print the first
+        // 5 Generated numbers
+        for (var i = 0; i < 5; i++) {
+
+            // Generate the next number
+            document.write(gen.next().value);
+
+            // New Line
+            document.write("<br>");
+        }
+    </script> -->
+    <!-- <script>
+
+
+        function* Numbers() {
+            let num = 1;
+            while (true) {
+                yield num++;
+            }
+        }
+
+        function Numbers() {
+            let num = 1;
+            return {
+                next: function () {
+                    return {
+                        value: num++,
+                        done: false
+                    };
+                }
+            };
+        }
+
+        var gen = Numbers();
+
+        // Loop to print the first 5 generated numbers
+        for (var i = 0; i < 5; i++) {
+            // Generate the next number
+            document.write(gen.next().value);
+
+            // New Line
+            document.write("<br>");
+        }
+    </script> -->
+</body>
+
+</html>
