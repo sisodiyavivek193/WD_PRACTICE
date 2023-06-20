@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Default Parameters</h1>
+</body>
+<script>
+    function main() {
+    return 10 + 20;
+    }
+    console.log(main());
+
+    function main(a, b) {
+        return a + b;
+    }
+    document.write(main(40, 50));
+
+    function main(a, c = 60, d = 140) {
+        return a + c + d;
+    }
+    document.write(main(80));
+
+
+
+    function name() {
+        return 100;
+    }
+    function main(a, c = 60, e = name()) {
+        return a + c + e;
+    }
+    document.write(main(80));
+</script>
+
+</html>
