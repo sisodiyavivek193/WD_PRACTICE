@@ -41,6 +41,9 @@
         <button>submit</button>
         <script>
             function validation(v, never, hii) {
+                console.log(v, "v")
+                console.log(never, "never")
+                console.log(hii, " hii")
                 if (v.value == '') {
                     document.getElementById(never).innerText = hii;
                 } else {
